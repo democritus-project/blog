@@ -1,4 +1,11 @@
 <div class="footer wrapper">
+    <nav class="nav social">
+        <ul class="flat">
+            {{- range $index, $key := .Site.Params.Social -}}
+                <li><a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a></li>
+            {{- end -}}
+        </ul>
+    </nav>
 	<nav class="nav">
 		<div>{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . | safeHTML }} | {{ end }} <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>

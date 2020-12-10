@@ -224,6 +224,7 @@ ul {
 .header {
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .header .avatar {
@@ -264,17 +265,21 @@ ul {
     padding: 0;
 }
 
-.header nav li {
+.header nav li,
+.footer nav li {
     display: inline-block;
     list-style: none;
     margin: 0 30px 0 0;
 }
-    .header nav.social a {
-        color: #333;
-    }
-    .header nav.social a:hover {
-        color: #3700ff;
-    }
+.footer nav li {
+    float: left;
+}
+.footer nav.social a {
+    color: #333;
+}
+.footer nav.social a:hover {
+    color: #3700ff;
+}
 
 .header .site-description nav {
     margin: 0;
@@ -316,6 +321,7 @@ ul {
 }
 
 .recent-posts .posts .post {
+    margin-top: 45px;
     margin-bottom: 45px;
 }
 
@@ -341,6 +347,11 @@ ul {
 }
 .post-header h1.title {
     margin: -10px 0 0 0;
+}
+
+.post {
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .post .title.small {
@@ -380,9 +391,9 @@ ul {
     text-align: right;
     font-size: 0.75em;
     color: #999;
-    border-top: 1px solid #f4f4f4;
-    margin-top: 40px;
-    padding: 15px 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e4e4e4;
 }
     .footer a {
         color: #666;
@@ -452,10 +463,12 @@ ul {
         margin-top: 10px;
     }
 
-    .header .nav.social li {
+    .footer .nav.social li {
         margin: 0;
     }
-    .header .nav li {
+    .header .nav li,
+    .footer .nav li
+    {
         margin: 0 10px 0 0;
         font-size: 14px;
     }

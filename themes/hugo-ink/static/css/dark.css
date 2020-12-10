@@ -15,10 +15,6 @@ html.dark ::selection {
   text-shadow: none
 }
 
-html.dark hr {
-  border-color: #333;
-}
-
 html.dark blockquote {
   border-color: #ddd;
 }
