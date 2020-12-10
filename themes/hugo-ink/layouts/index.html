@@ -6,7 +6,6 @@
 		{{ partial "head.html" . }}
 
 		<div class="recent-posts section">
-			{{ default "list.html" . }}
 			<div class="posts">
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
@@ -31,6 +30,9 @@
 									{{ else }}
 										{{ .Summary }}
 									{{ end }}
+								</span>
+								<span class="read-time">
+									<i>({{ .ReadingTime }} minute read)</i>
 								</span>
 							</div>
 						</div>

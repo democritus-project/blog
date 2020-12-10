@@ -1,6 +1,7 @@
 ---
 title: "Creating a Password"
 date: 2020-12-02T18:42:33-05:00
+tags: ["keyword-only arguments", "password", "string", "security"]
 ---
 
 In the `democritus_core::fun.py` code, there is a `password_create` function.

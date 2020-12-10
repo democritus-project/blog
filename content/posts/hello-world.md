@@ -1,6 +1,7 @@
 ---
 title: "Hello World"
 date: 2020-12-02T18:42:33-05:00
+tags: ["introduction", "democritus"]
 ---
 
 What, you may ask, is Democritus?
