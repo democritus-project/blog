@@ -1,0 +1,48 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Democritus Blog"
+theme = "hugo-ink"
+paginate = 5
+
+copyright = "© Democritus Project"
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+
+
+[params]
+    subtitle = "Musings and experiments with Democritus."
+
+    # Optional 64x64 avatar image.
+    avatar = "https://upload.wikimedia.org/wikipedia/commons/f/fc/Portrait_of_Democritus%2C_half-length_from_an_engraving._Wellcome_M0004256.jpg"
+
+    featherIconsCDN = true
+
+    mode = "auto" # "dark" or "auto"
+    # customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+    # customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+    # customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+
+# Nav.
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Gitlab"
+icon = "gitlab"
+url = "https://gitlab.com/democritus-project/"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"
